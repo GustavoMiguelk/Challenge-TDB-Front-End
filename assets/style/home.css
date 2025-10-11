@@ -5,14 +5,14 @@ header > #hero {
     width: 100%;
     padding-block-end: 1rem;
 
-    & div{
+    div{
         justify-content: center;
 
         width: 50%;
         height: 100vh;
     }
 
-    & #hero-text{
+    #hero-text{
         font-size: 2rem;
         display: flex;
         align-items: center;
@@ -97,16 +97,37 @@ section {
         display: flex;
         align-items: center;
         justify-content: center;
+        padding-block: 5rem;
 
         gap: 3rem;
         div{
             width: 50%;
             height: 40rem;
             background-color: grey;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        div:hover{
+            scale: 1.05;
         }
 
         #img-programa-apolonias{
-            background: url(../images/img-07-mulher-sorrindo-fundo-laranja.jpg);
+            background: url(../images/img-08-mulher-sorrindo-fundo-laranja.png) center;
+            background-size: cover;
+        }
+
+        #img-programa-dentistas-db{
+            background: url(../images/img-11-dentista-sorrindo.png) center;
+            background-size: cover;
+        }
+
+        span {
+            color: white;
+            font-size: 3rem;
+            font-weight: bold;
         }
     }
 }
