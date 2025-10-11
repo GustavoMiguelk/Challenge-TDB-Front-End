@@ -3,12 +3,13 @@
 header > #hero {
     display: flex;
     width: 100%;
+    padding-block-end: 1rem;
 
     & div{
         justify-content: center;
 
         width: 50%;
-        height: 50rem;
+        height: 100vh;
     }
 
     & #hero-text{
@@ -36,6 +37,7 @@ main {
 }
 
 section {
+    padding-block-end: 10rem;
     text-align: center;
     margin: auto;
     width: 70vw;
@@ -50,7 +52,7 @@ section {
         font-size: 1.2rem;
     }
 
-    #aside-membros-tdb{
+    aside#aside-membros-tdb{
         margin: 5rem 1rem;
         display: flex;
         justify-content: center;
@@ -91,5 +93,21 @@ section {
         }
     }
 
+    aside#programas {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        gap: 3rem;
+        div{
+            width: 50%;
+            height: 40rem;
+            background-color: grey;
+        }
+
+        #img-programa-apolonias{
+            background: url(../images/img-07-mulher-sorrindo-fundo-laranja.jpg);
+        }
+    }
 }
 
