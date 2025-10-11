@@ -22,6 +22,21 @@ section {
     border-radius: 50%;
 }
 
+#img-intengrante-01{
+    background: url(../images/img-14-foto-integrante.jpg) center no-repeat;
+    background-size: cover;
+}
+
+#img-intengrante-02{
+    background: url(../images/img-15-foto-integrante.jpg) center no-repeat;
+    background-size: cover;
+}
+
+#img-intengrante-03{
+    background: url(../images/img-16-foto-integrante.jpg) center no-repeat;
+    background-size: cover;
+}
+
 h2 {
     text-align: center;
     font-size: 2rem;
