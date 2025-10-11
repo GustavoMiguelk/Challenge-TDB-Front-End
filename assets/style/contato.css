@@ -1,0 +1,67 @@
+header {
+    background: url('https://turmadobem.org.br/wp-content/uploads/2022/08/banner-tdb-4.jpg')no-repeat center/cover;
+    height: 50rem;
+}
+
+h1 {
+    color: white;
+    font-size: 3rem;
+    padding: 5rem;
+}
+
+main {
+    padding: 5rem;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+aside {
+    width: 50%;
+
+    #contact-email {
+        text-align: center;
+
+        a {
+            text-decoration: none;
+            color: var(--secondary-color);
+        }
+    }
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 300;
+    color: var(--primary-color);
+    padding-block: 2rem;
+    text-align: center;
+}
+
+input {
+    width: 100%;
+    height: 4rem;
+
+    border: 2px solid var(--secondary-color);
+    border-radius: 1rem;
+
+    padding: 1rem;
+}
+
+#wrap-contato {
+    display: flex;
+    flex-wrap: nowrap; 
+    gap: 1rem;
+
+    width: 100%;
+}

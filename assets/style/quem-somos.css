@@ -1,0 +1,43 @@
+header {
+    height: 45rem;
+    background: url('https://turmadobem.org.br/wp-content/uploads/2025/08/voluntario-dentista-turma-do-bem-como-ser-voluntario-1.jpg')no-repeat center/cover;
+}
+
+h1 {
+    font-size: 3rem;
+    color: white;
+    padding: 5rem;
+}
+
+section {
+    display: flex;
+    padding: 6rem;
+    justify-content: space-between;
+}
+
+.img-integrante{
+    background-color: green;
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    padding-block: 4rem;
+}
+
+h3{
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+.links{
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+}

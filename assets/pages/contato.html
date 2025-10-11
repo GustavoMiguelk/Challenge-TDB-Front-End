@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato</title>
     <link rel="stylesheet" href="../style/index.css">
+    <link rel="stylesheet" href="../style/contato.css">
 </head>
 <body>
     <header>
@@ -15,36 +16,35 @@
                 <li><a href="./sobre.html">Sobre o Projeto</a> </li>
                 <li><a href="./faq.html">FAQ</a> </li>
                 <li><a href="./contato.html">Contato</a> </li>
-                <li><a href="Quem somos?">Quem somos?</a></li>
+                <li><a href="quem-somos.html">Quem somos?</a></li>
                 <li class="btn-donate"><a href="https://paybox.doare.org/paybox?payboxId=83fed202-df0f-4665-9c74-688a834028d4" target="_blank">🤍 Apoie a TDB!</a></li>
             </ul>        
         </nav>
-        <h1>Entre em Contato Conosco</h1>
+        <h1>Contato com a Turma do Bem</h1>
     </header>
     <main>
         <section>
-            <aside>
+            <aside> 
+                <h2>Dúvidas, reclamações ou sugestões</h2>
                 <form action="#">
-                    <input type="text">
-                    <input type="text">
-                    <input type="text">
-                    <input type="text">
+                    <input type="text" id="nome" placeholder="Seu nome">
+                    <div id="wrap-contato">
+                        <input type="text" id="email" placeholder="Seu e-mail">
+                        <input type="text" id="telefone" placeholder="Seu Telefone">
+                    </div>
+                    <input type="text" id="assunto" placeholder="Assunto">
+                    <input type="text" id="mensagem" placeholder="Sua mensagem">
+                    <button>Enviar</button>
                 </form>
             </aside>
         </section>
         <section>
             <aside>
-                <h2>Comunicação</h2>
-                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=comunicacao@tdb.org.br&su=Assunto%20do%20Email&body=Olá,%20gostaria%20de%20saber%20mais..." target="_blank">comunicacao@tdb.org.br</a>
-
-
-            </aside>
-        </section>
-        <section>
-            <aside>
-                <h2>Dúvidas, críticas ou sugestões</h2>
-                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=faleconosco@tdb.org.br&su=Assunto%20do%20Email&body=Olá,%20gostaria%20de%20saber%20mais..." target="_blank">faleconosco@tdb.org.br</a>
-
+                <h2>E-mails para contato</h2>
+                <div id="contact-email">
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=comunicacao@tdb.org.br&su=Assunto%20do%20Email&body=Olá,%20gostaria%20de%20saber%20mais..." target="_blank">comunicacao@tdb.org.br</a> |
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=faleconosco@tdb.org.br&su=Assunto%20do%20Email&body=Olá,%20gostaria%20de%20saber%20mais..." target="_blank">faleconosco@tdb.org.br</a>
+                </div>
             </aside>
         </section>
     </main>
