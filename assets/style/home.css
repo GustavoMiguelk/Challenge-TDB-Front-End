@@ -17,6 +17,14 @@ header > #hero {
         display: flex;
         align-items: center;
 
+        span {
+            color: var(--primary-color);
+        }
+
+        h1 {
+            color: var(--secondary-color);
+        }
+
         p {
             color: var(--earth-brown);
             font-size: 1.7rem;
@@ -28,7 +36,7 @@ header > #hero {
     }
 
     #hero-image{
-        background: url(../images/img-02-retrato-menino-sorrindo.jpg) center;
+        background: url('https://turmadobem.org.br/wp-content/uploads/2022/08/banner-tdb-1.jpg')no-repeat center/cover;
     }
 }
 
