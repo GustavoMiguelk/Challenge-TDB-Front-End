@@ -1,0 +1,43 @@
+@import url(home.css);
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: var(--roboto)
+}
+
+:root{
+    --primary-color: #FF8C00;
+    --secondary-color: #C5E400; 
+    --soft-beige: #FFFBEA;      
+    --earth-brown: #8B5A2B;    
+    --color-accent: #FFD54F;
+
+    --roboto: "Roboto", sans-serif;
+}
+
+.btn-donate {
+    background-color: var(--secondary-color);
+    padding: 1rem 1.5rem;
+    border-radius: 1.5rem;
+
+    a {
+        color: white;
+    }
+}
+
+.btn-tdb {
+    background-color: var(--secondary-color);
+    margin-top: 1rem;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+
+    color: white;
+    text-decoration: none;
+
+}
+

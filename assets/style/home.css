@@ -1,0 +1,72 @@
+@import url(index.css);
+
+header {
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header > nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.85rem 3rem;
+    width: 100%;
+
+    background-color: white;
+
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+header > nav > img {
+    width: 6rem;
+}
+
+header > nav > ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 3rem;
+
+    list-style: none;
+    align-items: center;
+
+    & li > a {
+        font-weight: bold;
+        font-size: 1.05rem;
+        text-decoration: none;
+        color: var(--earth-brown);
+    }
+}
+
+header > #hero {
+    display: flex;
+    width: 100%;
+
+    & div{
+        justify-content: center;
+
+        width: 50%;
+        height: 50rem;
+    }
+
+    & #hero-text{
+        font-size: 2rem;
+        display: flex;
+        align-items: center;
+
+        p {
+            color: var(--earth-brown);
+            font-size: 1.7rem;
+        }
+
+        div {
+            height: fit-content;
+        }
+    }
+
+    #hero-image{
+        background: url(../images/img-02-retrato-menino-sorrindo.jpg) center;
+    }
+}
+
