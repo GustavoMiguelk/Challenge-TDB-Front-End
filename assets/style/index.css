@@ -11,7 +11,7 @@
 
 :root{
     --primary-color: #FF8C00;
-    --secondary-color: #C5E400; 
+    --secondary-color: #BCC10E; 
     --soft-beige: #FFFBEA;      
     --earth-brown: #8B5A2B;    
 
@@ -65,6 +65,9 @@ header > nav {
     background-color: white;
 
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+
+    position: absolute;
+    top: 0;
 }
 
 header > nav > img {
@@ -101,7 +104,7 @@ footer {
     width: 100%;
     height: 12rem;
     color: white;
-    background-color: #C5E400;
+    background-color: #BCC10E;
 
     nav ul{
         list-style: none;

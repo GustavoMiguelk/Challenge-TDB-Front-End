@@ -1,0 +1,50 @@
+@import url(index.css);
+
+header {
+    width: 100%;
+    height: 40rem;
+    background:url('https://turmadobem.org.br/wp-content/uploads/2022/08/dentista-do-bem-dentista-voluntario-1.jpg')no-repeat center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+        font-size: 5rem;
+        color: white;
+    }
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5rem;
+    padding: 5rem;
+}
+
+section {
+    width: 40%;
+    height: fit-content;  
+    background-color: var(--soft-beige);
+    border-radius: 2rem;
+    color: var(--earth-brown);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+
+h2 {
+    width: 100%;
+    font-size: 2rem;
+    height: fit-content;
+    color: white;
+    background-color: var(--secondary-color);
+    border-radius: 2rem 2rem 0 0;
+    padding: 2rem;
+}
+
+section p {
+    padding: 3rem;
+}
+
