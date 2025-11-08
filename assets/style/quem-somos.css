@@ -56,3 +56,40 @@ p {
     justify-content: center;
     gap: 0.5rem;
 }
+@media (max-width: 768px) {
+    header {
+        height: 30rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+        padding: 3rem 1rem;
+    }
+
+    section {
+        flex-direction: column;
+        align-items: center;
+        padding: 3rem 1rem;
+        gap: 3rem
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        padding-block: 2rem;
+    }
+
+    section > div {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .img-integrante{
+        width: 12rem;
+        height: 12rem;
+        margin: 0 auto 1rem;
+    }
+
+    main > p {
+        padding: 0 1rem;
+    }
+}
