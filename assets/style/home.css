@@ -257,4 +257,16 @@ aside#programas span {
     aside#programas span {
         font-size: 1.5rem;
     }
+
+    footer nav img { 
+        width: 35px; 
+    } 
+
+    footer p { 
+        font-size: 0.9rem; 
+    } 
+    
+    #logo-tdb-footer { 
+        width: 90px;
+    }
 }

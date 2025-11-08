@@ -1,12 +1,17 @@
 header {
     height: 45rem;
     background: url('https://turmadobem.org.br/wp-content/uploads/2025/08/voluntario-dentista-turma-do-bem-como-ser-voluntario-1.jpg')no-repeat center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 h1 {
     font-size: 3rem;
     color: white;
     padding: 5rem;
+    text-align: center;
 }
 
 section {
@@ -23,6 +28,7 @@ section {
     text-align: center;
     margin-top: 40px;
     background-color: rgb(255,255, 254);
+    padding: 2rem 1rem;
 }
 
 .integrante img{
@@ -43,6 +49,12 @@ section {
     font-size:0.9rem;
 }
 
+.links{
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
 h2 {
     text-align: center;
     font-size: 2rem;
@@ -50,15 +62,8 @@ h2 {
 }
 
 
-.links{
-    display: flex;
-    justify-content: center;
-    gap: 0.5rem;
-}
-<<<<<<< HEAD
-
 main h2 {
-    display: list-item;
+    display: block;
     border: none;
     border-radius: 10px;
     text-align: center;
@@ -76,23 +81,28 @@ main p {
   color: #1f1d1d;
   margin-bottom: 10px;
   font-size: 1.5rem;
+  padding: 0 1rem;
 }
-=======
+
 @media (max-width: 768px) {
     header {
         height: 30rem;
+        justify-content: center;
     }
 
     h1 {
         font-size: 2rem;
-        padding: 3rem 1rem;
+        padding: 1rem;
     }
 
-    section {
-        flex-direction: column;
-        align-items: center;
-        padding: 3rem 1rem;
-        gap: 3rem
+    main h2 {
+        font-size: 2rem;
+        width: 90%;
+        margin-top: 2rem;
+    }
+
+    main p {
+        font-size: 1.2rem;
     }
 
     h2 {
@@ -100,21 +110,23 @@ main p {
         padding-block: 2rem;
     }
 
-    section > div {
-        width: 100%;
-        max-width: 300px;
+    .integrante {
+        padding: 2rem 0;
     }
+    
+    footer { 
+    padding: 2rem 1rem;
+    } 
 
-    .img-integrante{
-        width: 12rem;
-        height: 12rem;
-        margin: 0 auto 1rem;
-    }
+    footer nav img { 
+        width: 40px;
+    } 
 
-    main > p {
-        padding: 0 1rem;
-    }
+    footer nav ul { 
+        gap: 1.5rem;
+    } 
 }
+   
 @media (max-width: 600px) {
     header {
         height: 25rem;
@@ -124,13 +136,17 @@ main p {
         font-size: 1.8rem;
     }
 
-    section {
-        padding: 2rem 0.5rem;
-        gap: 2rem;
+    main h2 {
+        font-size: 1.8rem;
     }
 
-    h2 {
-        font-size: 1.3rem;
+    footer nav img { 
+        width: 35px; 
+    } 
+    footer p { 
+        font-size: 0.9rem; 
+    } 
+    #logo-tdb-footer { 
+        width: 90px;
     }
 }
->>>>>>> rm566850

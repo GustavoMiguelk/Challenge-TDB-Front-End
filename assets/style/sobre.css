@@ -81,6 +81,17 @@ aside div img {
         padding-left: 1.5rem;
         list-style: disc;
     }
+        footer { 
+    padding: 2rem 1rem;
+    } 
+
+    footer nav img { 
+        width: 40px;
+    } 
+
+    footer nav ul { 
+        gap: 1.5rem;
+    } 
 
 }
 @media (max-width: 600px) {
@@ -94,5 +105,14 @@ aside div img {
 
     section {
         padding: 1rem 0;
+    }
+     footer nav img { 
+        width: 35px; 
+    } 
+    footer p { 
+        font-size: 0.9rem; 
+    } 
+    #logo-tdb-footer { 
+        width: 90px;
     }
 }
