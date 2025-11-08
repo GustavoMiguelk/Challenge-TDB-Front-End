@@ -83,3 +83,16 @@ aside div img {
     }
 
 }
+@media (max-width: 600px) {
+    header {
+        height: 25rem;
+    }
+    
+    header h1 {
+        font-size: 2rem;
+    }
+
+    section {
+        padding: 1rem 0;
+    }
+}

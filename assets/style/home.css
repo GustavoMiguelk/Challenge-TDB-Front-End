@@ -240,3 +240,21 @@ aside#programas span {
         font-size: 2rem;
     }
 }
+@media (max-width: 600px) {
+    #hero-text {
+        font-size: 1.2rem;
+    }
+
+    section h2 {
+        font-size: 1.75rem;
+    }
+
+    aside#programas div {
+        width: 90%;
+        height: 18rem;
+    }
+
+    aside#programas span {
+        font-size: 1.5rem;
+    }
+}

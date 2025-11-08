@@ -169,5 +169,25 @@ footer {
     header > nav > ul li > a {
         font-size: 0.9rem;
     }
+}
+@media (max-width: 600px) {
+    nav {
+        padding: 0.5rem;
+    }
 
+    nav img {
+        width: 100px;
+    }
+
+    nav ul {
+        gap: 0.5rem;
+    }
+
+    nav ul a {
+        font-size: 0.9rem;
+    }
+
+    footer {
+        padding: 1rem;
+    }
 }

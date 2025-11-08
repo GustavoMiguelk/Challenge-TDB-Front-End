@@ -93,3 +93,21 @@ p {
         padding: 0 1rem;
     }
 }
+@media (max-width: 600px) {
+    header {
+        height: 25rem;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    section {
+        padding: 2rem 0.5rem;
+        gap: 2rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+}
