@@ -3,41 +3,39 @@
 header > #hero {
     display: flex;
     width: 100%;
-    padding-block-end: 1rem;
+}
 
-    div{
-        justify-content: center;
+header > #hero div{
+    justify-content: center;
+    width: 50%;
+    height: 100vh;
+}
 
-        width: 50%;
-        height: 100vh;
-    }
+#hero-text{
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+}
 
-    #hero-text{
-        font-size: 2rem;
-        display: flex;
-        align-items: center;
+#hero-text span {
+    color: var(--primary-color);
+}
 
-        span {
-            color: var(--primary-color);
-        }
+#hero-text h1 {
+    color: var(--secondary-color);
+}
 
-        h1 {
-            color: var(--secondary-color);
-        }
+#hero-text p {
+    color: var(--earth-brown);
+    font-size: 1.7rem;
+}
 
-        p {
-            color: var(--earth-brown);
-            font-size: 1.7rem;
-        }
+#hero-text div {
+    height: fit-content;
+}
 
-        div {
-            height: fit-content;
-        }
-    }
-
-    #hero-image{
-        background: url('https://turmadobem.org.br/wp-content/uploads/2022/08/banner-tdb-1.jpg')no-repeat center/cover;
-    }
+#hero-image{
+    background: url('https://turmadobem.org.br/wp-content/uploads/2022/08/banner-tdb-1.jpg')no-repeat center/cover;
 }
 
 main {
@@ -49,98 +47,214 @@ section {
     text-align: center;
     margin: auto;
     width: 70vw;
+}
 
-    h2{
-        font-size: 2.75rem;
+section h2{
+    font-size: 2.75rem;
+    padding: 1rem;
+    color: #35441c;
+}
+
+section p { 
+    font-size: 1.2rem;
+}
+
+aside#aside-membros-tdb{
+    margin: 5rem 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 2rem;
+}
+
+aside#aside-membros-tdb div {
+    width: 50%;
+    height: 40rem;
+}
+
+#img-aside-membros {
+    flex: 1 1 300px;
+    max-height: 300px;
+    background: url(../images/img-03-mulher-sorrindo.jpg) center;
+    background-size: cover;
+    border-radius: 1rem;
+}
+
+#list-aside-membros {
+    flex: 1 1 480px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+#list-aside-membros ul {
+    list-style: none;
+}
+
+#list-aside-membros ul li {
+    font-size: 1.2rem;
+    text-align: justify;
+    margin-block-end: 1.5rem;
+}
+
+#list-aside-membros ul li strong{
+    color: #556B2F;
+}
+
+#list-aside-membros ul li img{
+    width: 30px;
+}
+
+aside#programas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-block: 5rem;
+    gap: 3rem;
+}
+
+aside#programas div{
+    width: 50%;
+    height: 40rem;
+    background-color: grey;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+aside#programas div a {
+    text-decoration: none;
+}
+
+aside#programas div:hover{
+    scale: 1.05;
+}
+
+#img-programa-apolonias{
+    background: url(../images/img-08-mulher-sorrindo-fundo-laranja.png) center;
+    background-size: cover;
+}
+
+#img-programa-dentistas-db{
+    background: url(../images/img-11-dentista-sorrindo.png) center;
+    background-size: cover;
+}
+
+aside#programas span {
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    header > #hero {
+        flex-direction: column;
+        padding-top: 5rem;
+    }
+
+    header > #hero div {
+        width: 100%;
+        height: 50vh;
+    }
+
+    #hero-text {
+        order: 2;
+        height: 30vh;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    #hero-text p {
+        font-size: 1.4rem;
+    }
+
+    #hero-image {
+        order: 1;
+        height: 70vh;
+    }
+
+    main {
+        padding: 5rem 1rem;
+    }
+
+    section {
+        padding-block-end: 5rem;
+        width: 100%;
+    }
+    
+    section h2 {
+        font-size: 2rem;
+    }
+
+    aside#aside-membros-tdb {
+        flex-direction: column;
+        margin: 2rem auto;
+        width: 90%;
+        max-width: 450px;
+        align-items: center;
+    }
+
+    #img-aside-membros {
+        min-height: 250px;
+        width: 100%;
+        max-width: 450px;
+    }
+    
+    #list-aside-membros {
         padding: 1rem;
-        color: #35441c;
+        width: 100%;
     }
 
-    p { 
+    #list-aside-membros ul {
+        padding: 0;
+    }
+
+    #list-aside-membros ul li {
+        text-align: left; /* Ajustado para left para melhor leitura no mobile */
+        font-size: 1rem;
+        padding: 0 0.5rem;
+    }
+
+    aside#aside-membros-tdb #list-aside-membros ul li .btn-tdb {
+        display: block;
+        width: fit-content;
+        margin: 1.5rem auto 0;
         font-size: 1.2rem;
-    }
-
-    aside#aside-membros-tdb{
-        margin: 5rem 1rem;
-        display: flex;
-        justify-content: center;
-
-        div {
-            width: 50%;
-            height: 40rem;
-        }
-
-        #img-aside-membros {
-            background: url(../images/img-03-mulher-sorrindo.jpg) center;
-            background-size: cover;
-            border-radius: 1rem;
-        }
-
-        #list-aside-membros {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 3rem;
-
-            ul {
-                list-style: none;
-                li {
-                    font-size: 1.5rem;
-                    text-align: justify;
-                    margin-block-end: 3rem;
-
-                    strong{
-                        color: #556B2F;
-                    }
-
-                    img{
-                        width: 30px;
-                    }
-                }
-            }
-        }
+        padding: 0.8rem 1.5rem;
     }
 
     aside#programas {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding-block: 5rem;
+        flex-direction: column;
+        gap: 2rem;
+    }
 
-        gap: 3rem;
-        div{
-            width: 50%;
-            height: 40rem;
-            background-color: grey;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+    aside#programas div {
+        width: 80%;
+        height: 20rem;
+    }
 
-            a {
-                text-decoration: none;
-            }
-        }
-
-        div:hover{
-            scale: 1.05;
-        }
-
-        #img-programa-apolonias{
-            background: url(../images/img-08-mulher-sorrindo-fundo-laranja.png) center;
-            background-size: cover;
-        }
-
-        #img-programa-dentistas-db{
-            background: url(../images/img-11-dentista-sorrindo.png) center;
-            background-size: cover;
-        }
-
-        span {
-            color: white;
-            font-size: 3rem;
-            font-weight: bold;
-        }
+    aside#programas span {
+        font-size: 2rem;
     }
 }
+@media (max-width: 600px) {
+    #hero-text {
+        font-size: 1.2rem;
+    }
 
+    section h2 {
+        font-size: 1.75rem;
+    }
+
+    aside#programas div {
+        width: 90%;
+        height: 18rem;
+    }
+
+    aside#programas span {
+        font-size: 1.5rem;
+    }
+}

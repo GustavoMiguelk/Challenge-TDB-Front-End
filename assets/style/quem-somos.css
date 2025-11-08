@@ -55,6 +55,7 @@ h2 {
     justify-content: center;
     gap: 0.5rem;
 }
+<<<<<<< HEAD
 
 main h2 {
     display: list-item;
@@ -76,3 +77,60 @@ main p {
   margin-bottom: 10px;
   font-size: 1.5rem;
 }
+=======
+@media (max-width: 768px) {
+    header {
+        height: 30rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+        padding: 3rem 1rem;
+    }
+
+    section {
+        flex-direction: column;
+        align-items: center;
+        padding: 3rem 1rem;
+        gap: 3rem
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        padding-block: 2rem;
+    }
+
+    section > div {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .img-integrante{
+        width: 12rem;
+        height: 12rem;
+        margin: 0 auto 1rem;
+    }
+
+    main > p {
+        padding: 0 1rem;
+    }
+}
+@media (max-width: 600px) {
+    header {
+        height: 25rem;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    section {
+        padding: 2rem 0.5rem;
+        gap: 2rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+}
+>>>>>>> rm566850
