@@ -249,7 +249,7 @@ header {
     }
 
     #list-aside-membros ul li {
-        text-align: left; /* Ajustado para left para melhor leitura no mobile */
+        text-align: left; 
         font-size: 1rem;
         padding: 0 0.5rem;
     }
