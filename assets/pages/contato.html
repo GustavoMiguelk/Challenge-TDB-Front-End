@@ -27,16 +27,20 @@
         <section>
             <aside> 
                 <h2>Dúvidas, reclamações ou sugestões</h2>
-                <form action="#">
+                <form id="formContato">
                     <input type="text" id="nome" placeholder="Seu nome">
+
                     <div id="wrap-contato">
                         <input type="text" id="email" placeholder="Seu e-mail">
                         <input type="text" id="telefone" placeholder="Seu Telefone">
                     </div>
+
                     <input type="text" id="assunto" placeholder="Assunto">
                     <input type="text" id="mensagem" placeholder="Sua mensagem">
-                    <button>Enviar</button>
+
+                    <button type="submit">Enviar</button>
                 </form>
+                <p id="statusMsg" style="margin-top: 10px; font-weight: bold;"></p>
             </aside>
         </section>
         <section>
@@ -60,5 +64,6 @@
     </nav>    
     <p>&copy; Todos os direitos reservados - 2025. Solução do Bem</p>
     </footer>
+    <script src="../script/email.js"></script>
 </body>
 </html>
