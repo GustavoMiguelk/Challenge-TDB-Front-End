@@ -6,6 +6,7 @@ header > #hero {
 }
 
 header > #hero div{
+    display: flex;
     justify-content: center;
     width: 50%;
     height: 100vh;
@@ -35,11 +36,12 @@ header > #hero div{
 }
 
 #hero-image{
-    background: url('https://turmadobem.org.br/wp-content/uploads/2022/08/banner-tdb-1.jpg')no-repeat center/cover;
+    background: url('../images/img-02-retrato-menino-sorrindo.jpg') no-repeat center/cover;
+    height: 100vh;
 }
 
 main {
-    padding: 10rem 5rem;
+    padding: 4rem 5rem;
 }
 
 section {
@@ -147,6 +149,40 @@ aside#programas span {
     color: white;
     font-size: 3rem;
     font-weight: bold;
+}
+header > nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+header {
+  padding-top: 72px;
+}
+
+#hero-text {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+#hero-text > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+}
+
+#hero-text a.btn-tdb {
+  display: inline-block;
+  width: auto;
+  max-width: 220px;
+  padding: 0.8rem 1.4rem;
+  font-size: 1rem;
+  white-space: nowrap;
+  box-sizing: border-box;
 }
 
 @media (max-width: 768px) {
@@ -270,3 +306,4 @@ aside#programas span {
         width: 90px;
     }
 }
+

@@ -14,7 +14,7 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias:
 * **CSS3**
 * **JavaScript**
 
--
+
 
 ## INTEGRANTES DA EQUIPE (1TDSPB)
 
@@ -23,7 +23,7 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias:
 | **Gustavo Miguel Martins de Oliveira** | 566666 | 1TDSPB |
 | **Mariana de Paula Aguiar** | 566850 | 1TDSPB |
 
--
+
 
 ## ESTRUTURA DE PÁGINAS
 
@@ -35,10 +35,9 @@ A estrutura de navegação inclui as seguintes páginas:
 * `pages/quem-somos.html` (Integrantes)
 * `pages/sobre.html` (Sobre o Projeto)
 
--
+
 
 ## IMAGENS E ÍCONES
 
 As imagens e ícones utilizados no projeto estão armazenados na pasta `assets/images`.
 
--
