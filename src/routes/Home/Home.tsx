@@ -1,7 +1,7 @@
 export default function Home() {
   return (
     <main>
-      {/* Hero */}
+      {/* Hero */ }
       <div className="flex flex-col md:flex-row min-h-screen">
         <div className="flex-1 flex items-center justify-center px-8 py-16">
           <div className="text-center md:text-left max-w-lg">
@@ -20,7 +20,7 @@ export default function Home() {
         />
       </div>
 
-      {/* Quem pode fazer parte */}
+      {/*Quem pode fazer parte da Turma do Bem */}
       <section className="py-20 px-6 max-w-5xl mx-auto">
         <h2 className="text-4xl font-bold text-center mb-10" style={{ color: '#35441c' }}>
           Quem pode fazer parte da Turma do Bem?
@@ -49,7 +49,7 @@ export default function Home() {
         </div>
       </section>
 
-    {/* Programas */}
+    {/* Programas da Turma do Bem*/}
     <section className="py-20 px-6 bg-beige">
       <h2 className="text-4xl font-bold text-center mb-12" style={{ color: '#35441c' }}>
       Programas da Turma do Bem
