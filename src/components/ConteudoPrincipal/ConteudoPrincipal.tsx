@@ -4,12 +4,12 @@ import Rodape from '../Rodape/Rodape'
 
 export default function ConteudoPrincipal() {
   return (
-    <>
+    <div className="min-h-screen flex flex-col">
       <Cabecalho />
-      <main>
-        <Outlet />
-      </main>
-      <Rodape />
-    </>
+        <main className="flex-1 pt-20">
+            <Outlet />
+        </main>
+         <Rodape />
+    </div>
   )
 }
