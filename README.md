@@ -1,43 +1,73 @@
-# CHALLENGE-TDB-FRONT-END: SPRINT 02 - FRONT-END DESIGN ENGINEERING
+# React + TypeScript + Vite
 
-## LINK DO REPOSITÓRIO 
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-[https://github.com/GustavoMiguelk/Challenge-TDB-Front-End](https://github.com/GustavoMiguelk/Challenge-TDB-Front-End)
+Currently, two official plugins are available:
 
--
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-## TECNOLOGIAS
+## React Compiler
 
-O projeto foi desenvolvido utilizando as seguintes tecnologias:
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-* **HTML5**
-* **CSS3**
-* **JavaScript**
+## Expanding the ESLint configuration
 
+If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
 
+```js
+export default defineConfig([
+  globalIgnores(['dist']),
+  {
+    files: ['**/*.{ts,tsx}'],
+    extends: [
+      // Other configs...
 
-## INTEGRANTES DA EQUIPE (1TDSPB)
+      // Remove tseslint.configs.recommended and replace with this
+      tseslint.configs.recommendedTypeChecked,
+      // Alternatively, use this for stricter rules
+      tseslint.configs.strictTypeChecked,
+      // Optionally, add this for stylistic rules
+      tseslint.configs.stylisticTypeChecked,
 
-| Nome | RM | Turma |
-| **Manuella Rinaldi** | 567915 | 1TDSPB |
-| **Gustavo Miguel Martins de Oliveira** | 566666 | 1TDSPB |
-| **Mariana de Paula Aguiar** | 566850 | 1TDSPB |
+      // Other configs...
+    ],
+    languageOptions: {
+      parserOptions: {
+        project: ['./tsconfig.node.json', './tsconfig.app.json'],
+        tsconfigRootDir: import.meta.dirname,
+      },
+      // other options...
+    },
+  },
+])
+```
 
+You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
 
+```js
+// eslint.config.js
+import reactX from 'eslint-plugin-react-x'
+import reactDom from 'eslint-plugin-react-dom'
 
-## ESTRUTURA DE PÁGINAS
-
-A estrutura de navegação inclui as seguintes páginas:
-
-* `index.html` (Página Inicial / Home)
-* `pages/contato.html` (Contato)
-* `pages/faq.html` (Perguntas Frequentes - FAQ)
-* `pages/quem-somos.html` (Integrantes)
-* `pages/sobre.html` (Sobre o Projeto)
-
-
-
-## IMAGENS E ÍCONES
-
-As imagens e ícones utilizados no projeto estão armazenados na pasta `assets/images`.
-
+export default defineConfig([
+  globalIgnores(['dist']),
+  {
+    files: ['**/*.{ts,tsx}'],
+    extends: [
+      // Other configs...
+      // Enable lint rules for React
+      reactX.configs['recommended-typescript'],
+      // Enable lint rules for React DOM
+      reactDom.configs.recommended,
+    ],
+    languageOptions: {
+      parserOptions: {
+        project: ['./tsconfig.node.json', './tsconfig.app.json'],
+        tsconfigRootDir: import.meta.dirname,
+      },
+      // other options...
+    },
+  },
+])
+```
