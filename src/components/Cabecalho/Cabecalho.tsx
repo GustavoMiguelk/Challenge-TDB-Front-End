@@ -11,6 +11,8 @@ export default function Cabecalho() {
           <li><Link to="/faq" className="font-bold text-brown hover:text-primary hover:underline no-underline">FAQ</Link></li>
           <li><Link to="/contato" className="font-bold text-brown hover:text-primary hover:underline no-underline">Contato</Link></li>
           <li><Link to="/integrantes" className="font-bold text-brown hover:text-primary hover:underline no-underline">Quem somos?</Link></li>
+          <li><Link to="/solucao" className="font-bold text-brown hover:text-primary hover:underline no-underline">Solução</Link></li>
+          
           <li>
             <a 
               href="https://paybox.doare.org/paybox?payboxId=83fed202-df0f-4665-9c74-688a834028d4" 
