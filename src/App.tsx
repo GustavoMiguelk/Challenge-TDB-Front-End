@@ -5,6 +5,7 @@ import Sobre from './routes/Sobre/Sobre'
 import FAQ from './routes/FAQ/FAQ'
 import Contato from './routes/Contatos/Contato'
 import Integrantes from './routes/Integrantes/Integrantes'
+import IntegrantesDinamica from './routes/Integrantes/IntegrantesDinamica'
 import Solucao from './routes/Solucao/Solucao'
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
           <Route path="faq" element={<FAQ />} />
           <Route path="contato" element={<Contato />} />
           <Route path="integrantes" element={<Integrantes />} />
+          <Route path="integrantes/:id" element={<IntegrantesDinamica />} />
           <Route path="solucao" element={<Solucao />} />
         </Route>
       </Routes>
