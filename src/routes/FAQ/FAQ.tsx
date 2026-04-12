@@ -4,7 +4,7 @@ export default function FAQ() {
       {/* Header com Background Image e Overlay */}
       <header className="w-full h-[20rem] md:h-[40rem] bg-[url('https://turmadobem.org.br/wp-content/uploads/2022/08/dentista-do-bem-dentista-voluntario-1.jpg')] bg-no-repeat bg-center bg-cover flex items-center justify-center">
         <h1 className="text-[2rem] md:text-[5rem] text-white font-bold px-4 text-center">
-          Sobre a ONG
+          FAQ sobre a ONG
         </h1>
       </header>
 
