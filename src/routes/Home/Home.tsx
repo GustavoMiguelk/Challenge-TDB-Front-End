@@ -31,7 +31,7 @@ export default function Home() {
         <div className="flex flex-col md:flex-row gap-8 items-center">
           <div
             className="flex-1 rounded-2xl bg-cover bg-center min-h-64"
-            style={{ backgroundImage: "url('/img-03-mulher-sorrindo.jpg')" }}
+            style={{ backgroundImage: "url('/img-03-mulher-sorrindo.png')" }}
           />
           <div className="flex-1">
             <ul className="space-y-4 list-none">
