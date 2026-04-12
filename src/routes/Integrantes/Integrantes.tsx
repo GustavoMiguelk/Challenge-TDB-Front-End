@@ -1,13 +1,13 @@
 import { useNavigate } from 'react-router-dom'
+import TituloPagina from '../../components/TituloPagina/TituloPagina'
+
 
 export default function Integrantes() {
   const navigate = useNavigate()
   return (
     <div>
 <main>
-  <h2 className="block text-center text-5xl text-white bg-[#BCC10e] rounded-[10px] w-[700px] max-w-[90%] px-[10px] py-[10px] mx-auto mt-[50px] md:text-4xl md:mt-8 sm:text-[1.8rem]">
-    Nosso Time
-  </h2>
+  <TituloPagina titulo="Nosso Time" />
   <section className="flex justify-center gap-[40px] flex-wrap text-center mt-[40px] bg-[rgb(255,255,254)] px-4 py-8">
     {/* Integrante 1 */}
      <div className="bg-white rounded-2xl shadow-md p-6 w-64 flex flex-col items-center gap-2">
