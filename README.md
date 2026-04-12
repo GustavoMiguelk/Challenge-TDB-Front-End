@@ -74,9 +74,7 @@ npm run dev
 | Foto | Nome | RM | Turma | Links |
 |------|------|----|-------|-------|
 | ![Manuella](./public/img-14-foto-integrante.jpg) | **Manuella Rinaldi** | 567915 | 1TDSPB | [GitHub](https://github.com/manuellarinaldi) · [LinkedIn](https://www.linkedin.com/in/manuellarinaldii) |
-
 | ![Gustavo](./public/img-15-foto-integrante.jpg) | **Gustavo Miguel** | 566666 | 1TDSPB | [GitHub](https://github.com/GustavoMiguelk) · [LinkedIn](https://www.linkedin.com/in/gustavo-miguel-dev/) |
-
 | ![Mariana](./public/img-16-foto-integrante.jpg) | **Mariana de Paula** | 566850 | 1TDSPB | [GitHub](https://github.com/marianaaguiar27) · [LinkedIn](https://www.linkedin.com/in/mariana-de-paula-aguiar-149b34389/) |
 
 
