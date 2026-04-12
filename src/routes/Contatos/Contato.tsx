@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { useForm } from 'react-hook-form'
+import TituloPagina from '../../components/TituloPagina/TituloPagina'
 
 interface FormData {
   nome: string
@@ -34,7 +35,8 @@ export default function Contato() {
   }
 
   return (
-    <main className="max-w-4xl mx-auto px-6 py-16">
+      <main className="max-w-4xl mx-auto px-6 pb-16">      
+      <TituloPagina titulo="Contato" />
       <section className="mb-12">
         <h2 className="text-3xl font-bold mb-6" style={{ color: '#35441c' }}>
           Dúvidas, reclamações ou sugestões
