@@ -158,22 +158,22 @@ export default function Dashboard() {
   const [abaAtiva, setAbaAtiva] = useState<Aba>('beneficiarios')
   const [beneficiarios, setBeneficiarios] = useState<Beneficiario[]>([])
   const [consultas, setConsultas] = useState<Consulta[]>([])
-  const [eventos, setEventos] = useState<Evento[]>([])
+  const [eventos] = useState<Evento[]>([])
   const [formAberto, setFormAberto] = useState(false)
 
- useEffect(() => {
-  const API_URL = 'http://localhost:8080'
+  useEffect(() => {
+    const API_URL = 'http://localhost:8080'
 
-  fetch(`${API_URL}/beneficiario`)
-    .then(res => res.json())
-    .then(data => setBeneficiarios(data))
-    .catch(() => setBeneficiarios([]))
+    fetch(`${API_URL}/beneficiario`)
+      .then(res => res.json())
+      .then(data => setBeneficiarios(data))
+      .catch(() => setBeneficiarios([]))
 
-  fetch(`${API_URL}/consulta`)
-    .then(res => res.json())
-    .then(data => setConsultas(data))
-    .catch(() => setConsultas([]))
-}, [])
+    fetch(`${API_URL}/consulta`)
+      .then(res => res.json())
+      .then(data => setConsultas(data))
+      .catch(() => setConsultas([]))
+  }, [])
 
   return (
     <main className="max-w-5xl mx-auto px-6 py-10">
