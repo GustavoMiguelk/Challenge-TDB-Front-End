@@ -8,6 +8,7 @@ import Integrantes from './routes/Integrantes/Integrantes'
 import IntegrantesDinamica from './routes/Integrantes/IntegrantesDinamica'
 import Solucao from './routes/Solucao/Solucao'
 import Dashboard from './routes/Dashboard/Dashboard'
+import Login from './routes/Login/Login'
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="integrantes/:id" element={<IntegrantesDinamica />} />
           <Route path="solucao" element={<Solucao />} />
           <Route path="dashboard" element={<Dashboard />} />
+          <Route path="login" element={<Login />} />
         </Route>
       </Routes>
     </BrowserRouter>
