@@ -235,11 +235,20 @@ export default function Dashboard() {
               {b.programa.nome}
             </span>
             <button
-              onClick={() => setBeneficiarios(beneficiarios.filter(ben => ben.cpf !== b.cpf))}
-              className="text-red-400 hover:text-red-600 text-sm font-semibold"
-            >
-              Excluir
-            </button>
+            onClick={async () => {
+              try {
+                await fetch(`http://localhost:8080/beneficiario/${b.cpf}`, {
+                  method: 'DELETE'
+                })
+                setBeneficiarios(beneficiarios.filter(ben => ben.cpf !== b.cpf))
+              } catch {
+                alert('Erro ao excluir beneficiário!')
+              }
+            }}
+            className="text-red-400 hover:text-red-600 text-sm font-semibold"
+          >
+            Excluir
+          </button>
           </div>
         </div>
       ))}
