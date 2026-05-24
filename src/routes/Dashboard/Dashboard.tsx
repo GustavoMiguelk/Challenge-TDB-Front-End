@@ -31,7 +31,7 @@ interface Programa {
   descricao: string
 }
 
-type Aba = 'beneficiarios' | 'consultas' | 'eventos'
+type Aba = 'beneficiarios' | 'consultas'
 
 function FormBeneficiario({ onSalvar }: { onSalvar: (b: Beneficiario) => void }) {
   const { register, handleSubmit, formState: { errors } } = useForm<{
@@ -183,7 +183,7 @@ export default function Dashboard() {
       </div>
 
       <div className="flex gap-2 mb-8 border-b border-gray-200">
-        {(['beneficiarios', 'consultas', 'eventos'] as Aba[]).map((aba) => (
+        {(['beneficiarios', 'consultas'] as Aba[]).map((aba) => (
           <button
             key={aba}
             onClick={() => setAbaAtiva(aba)}
@@ -193,7 +193,7 @@ export default function Dashboard() {
                 : 'text-gray-500 hover:text-secondary'
             }`}
           >
-            {aba === 'beneficiarios' ? 'Beneficiários' : aba === 'consultas' ? 'Consultas' : 'Eventos'}
+            {aba === 'beneficiarios' ? 'Beneficiários' : aba === 'consultas' ? 'Consultas': ''}
           </button>
         ))}
       </div>

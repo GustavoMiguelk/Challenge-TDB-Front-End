@@ -10,11 +10,13 @@ interface LoginFormData {
 export default function Login() {
   const navigate = useNavigate()
   const [erro, setErro] = useState('')
+  const [carregando, setCarregando] = useState(false)
 
   const { register, handleSubmit, formState: { errors } } = useForm<LoginFormData>()
 
   async function onSubmit(data: LoginFormData) {
     try {
+      setCarregando(true)
       const res = await fetch('https://sprint-04-ddd.onrender.com/profissional/login', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -30,11 +32,24 @@ export default function Login() {
       }
     } catch {
       setErro('Erro ao conectar com o servidor.')
+    } finally {
+      setCarregando(false)
     }
   }
 
   return (
     <main className="min-h-screen flex items-center justify-center bg-beige px-6">
+
+      {/* Modal de carregando */}
+      {carregando && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+          <div className="bg-white rounded-2xl shadow-xl px-10 py-8 flex flex-col items-center gap-4">
+            <div className="w-10 h-10 border-4 border-secondary border-t-transparent rounded-full animate-spin" />
+            <p className="text-gray-600 font-medium">Entrando...</p>
+          </div>
+        </div>
+      )}
+
       <div className="bg-white rounded-2xl shadow-lg p-10 w-full max-w-md">
         <h1 className="text-3xl font-bold text-center mb-2" style={{ color: '#35441c' }}>
           Login
@@ -70,7 +85,8 @@ export default function Login() {
 
           <button
             type="submit"
-            className="bg-secondary hover:bg-[#9cb400] text-white font-bold py-3 px-6 rounded-xl mt-2"
+            disabled={carregando}
+            className="bg-secondary hover:bg-[#9cb400] text-white font-bold py-3 px-6 rounded-xl mt-2 disabled:opacity-50"
           >
             Entrar
           </button>
