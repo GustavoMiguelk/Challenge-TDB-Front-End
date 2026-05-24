@@ -84,13 +84,13 @@ function FormBeneficiario({ onSalvar }: { onSalvar: (b: Beneficiario) => void })
     }
 
     try {
-      await fetch('http://localhost:8080/responsavel', {
+      await fetch('https://sprint-04-ddd.onrender.com/responsavel', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(responsavel)
       })
 
-      const res = await fetch('http://localhost:8080/beneficiario', {
+      const res = await fetch('https://sprint-04-ddd.onrender.com/beneficiario', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(beneficiario)
@@ -162,7 +162,7 @@ export default function Dashboard() {
   const [formAberto, setFormAberto] = useState(false)
 
   useEffect(() => {
-    const API_URL = 'http://localhost:8080'
+    const API_URL = 'https://sprint-04-ddd.onrender.com'
 
     fetch(`${API_URL}/beneficiario`)
       .then(res => res.json())
@@ -237,7 +237,7 @@ export default function Dashboard() {
             <button
             onClick={async () => {
               try {
-                await fetch(`http://localhost:8080/beneficiario/${b.cpf}`, {
+                await fetch(`https://sprint-04-ddd.onrender.com/beneficiario/${b.cpf}`, {
                   method: 'DELETE'
                 })
                 setBeneficiarios(beneficiarios.filter(ben => ben.cpf !== b.cpf))
