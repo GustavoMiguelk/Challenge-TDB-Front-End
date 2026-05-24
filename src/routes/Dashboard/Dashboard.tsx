@@ -273,22 +273,6 @@ export default function Dashboard() {
           ))}
         </div>
       )}
-
-      {abaAtiva === 'eventos' && (
-        <div className="space-y-4">
-          {eventos.map((e) => (
-            <div key={e.titulo} className="bg-white rounded-2xl shadow-sm p-6 flex flex-col md:flex-row md:items-center md:justify-between gap-2">
-              <div>
-                <h3 className="text-lg font-bold text-gray-800">{e.titulo}</h3>
-                <p className="text-sm text-gray-500">Local: {e.local}</p>
-              </div>
-              <span className="bg-beige text-brown font-semibold text-sm px-4 py-1 rounded-full border border-brown/20">
-                {e.data}
-              </span>
-            </div>
-          ))}
-        </div>
-      )}
     </main>
   )
 }
