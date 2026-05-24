@@ -19,12 +19,6 @@ interface Consulta {
   local: string
 }
 
-interface Evento {
-  titulo: string
-  data: string
-  local: string
-}
-
 interface Responsavel {
   nome: string
   cpf: string
@@ -158,7 +152,6 @@ export default function Dashboard() {
   const [abaAtiva, setAbaAtiva] = useState<Aba>('beneficiarios')
   const [beneficiarios, setBeneficiarios] = useState<Beneficiario[]>([])
   const [consultas, setConsultas] = useState<Consulta[]>([])
-  const [eventos] = useState<Evento[]>([])
   const [formAberto, setFormAberto] = useState(false)
 
   useEffect(() => {
