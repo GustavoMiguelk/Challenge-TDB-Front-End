@@ -35,7 +35,7 @@ export default function Sobre() {
           </div>
           <div className="flex-1">
             <h2 className="text-3xl font-bold mb-4" style={{ color: '#35441c' }}>Tecnologias Utilizadas</h2>
-            <p className="text-gray-600 text-lg leading-relaxed">Nossa equipe utilizou React com TypeScript para a construção dos componentes, Vite como ferramenta de build, Tailwind CSS para a estilização responsiva, React Router DOM para a navegação entre páginas e React Hook Form para a validação de formulários.</p>
+            <p className="text-gray-600 text-lg leading-relaxed">Nossa equipe utilizou React com TypeScript para a construção dos componentes, Vite como ferramenta de build, Tailwind CSS para a estilização responsiva, React Router DOM para a navegação entre páginas, React Hook Form para validação de formulários, além de Java 17+, Quarkus, Maven, API REST e Banco de Dados Oracle no desenvolvimento do backend.</p>
           </div>
         </section>
         <section className="flex flex-col md:flex-row-reverse gap-8 items-center">

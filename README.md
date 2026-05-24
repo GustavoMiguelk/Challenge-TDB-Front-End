@@ -1,14 +1,15 @@
 # Solução do Bem
 
-Projeto desenvolvido para a disciplina de **Front-End Design Engineering** — Sprint 03.
-Aplicação web moderna para a ONG **Turma do Bem**, migrada de HTML/CSS para React + Vite + TypeScript.
+Projeto desenvolvido para a disciplina de **Front-End Design Engineering** — Sprint 04.
+Aplicação web moderna para a ONG **Turma do Bem**, com integração de API REST desenvolvida em Java + Quarkus.
 
 ---
 
 ## Links
 
 - **Repositório GitHub:** [https://github.com/GustavoMiguelk/Challenge-TDB-Front-End](https://github.com/GustavoMiguelk/Challenge-TDB-Front-End)
-- **Vídeo YouTube:** https://youtu.be/8IpilinFetQ 
+- **Vídeo YouTube:** https://youtu.be/KRacwFVU2p0 
+- **Deploy Vercel:** https://challenge-tdb-front-end.vercel.app/
 
 ---
 
@@ -26,6 +27,7 @@ O objetivo do projeto é criar uma presença digital moderna e acessível para a
 - Tailwind CSS 
 - React Router DOM 
 - React Hook Form
+- API REST Java + Quarkus
 - GitHub
 
 ---
@@ -35,14 +37,18 @@ src/
 ├── components/
 │   ├── Cabecalho/
 │   ├── ConteudoPrincipal/
-│   └── Rodape/
+│   ├── Rodape/
+│   └── TituloPagina/
 ├── routes/
 │   ├── Home/
 │   ├── Sobre/
 │   ├── FAQ/
 │   ├── Contatos/
 │   ├── Integrantes/
-│   └── Solucao/
+│   ├── Solucao/
+│   ├── Login/
+│   ├── Cadastro/
+│   └── Dashboard/
 ├── App.tsx
 ├── main.tsx
 └── index.css
@@ -65,6 +71,21 @@ npm install
 
 # 4. Inicie o servidor de desenvolvimento
 npm run dev
+
+# 5. Acesse no navegador
+# http://localhost:5173
+```
+
+### Para rodar a API Java (necessário para Login e Dashboard):
+
+```bash
+# Na pasta do projeto Java
+# Abra pelo IntelliJ IDEA: Maven → quarkus:dev
+# A API ficará disponível em http://localhost:8080
+```
+
+---
+
 ```
 
 ---
