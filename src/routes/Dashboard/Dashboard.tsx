@@ -19,12 +19,6 @@ interface Consulta {
   local: string
 }
 
-interface Evento {
-  titulo: string
-  data: string
-  local: string
-}
-
 interface Responsavel {
   nome: string
   cpf: string
@@ -84,13 +78,13 @@ function FormBeneficiario({ onSalvar }: { onSalvar: (b: Beneficiario) => void })
     }
 
     try {
-      await fetch('http://localhost:8080/responsavel', {
+      await fetch('https://sprint-04-ddd.onrender.com/responsavel', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(responsavel)
       })
 
-      const res = await fetch('http://localhost:8080/beneficiario', {
+      const res = await fetch('https://sprint-04-ddd.onrender.com/beneficiario', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(beneficiario)
@@ -158,22 +152,21 @@ export default function Dashboard() {
   const [abaAtiva, setAbaAtiva] = useState<Aba>('beneficiarios')
   const [beneficiarios, setBeneficiarios] = useState<Beneficiario[]>([])
   const [consultas, setConsultas] = useState<Consulta[]>([])
-  const [eventos, setEventos] = useState<Evento[]>([])
   const [formAberto, setFormAberto] = useState(false)
 
- useEffect(() => {
-  const API_URL = 'http://localhost:8080'
+  useEffect(() => {
+    const API_URL = 'https://sprint-04-ddd.onrender.com'
 
-  fetch(`${API_URL}/beneficiario`)
-    .then(res => res.json())
-    .then(data => setBeneficiarios(data))
-    .catch(() => setBeneficiarios([]))
+    fetch(`${API_URL}/beneficiario`)
+      .then(res => res.json())
+      .then(data => setBeneficiarios(data))
+      .catch(() => setBeneficiarios([]))
 
-  fetch(`${API_URL}/consulta`)
-    .then(res => res.json())
-    .then(data => setConsultas(data))
-    .catch(() => setConsultas([]))
-}, [])
+    fetch(`${API_URL}/consulta`)
+      .then(res => res.json())
+      .then(data => setConsultas(data))
+      .catch(() => setConsultas([]))
+  }, [])
 
   return (
     <main className="max-w-5xl mx-auto px-6 py-10">
@@ -237,7 +230,7 @@ export default function Dashboard() {
             <button
             onClick={async () => {
               try {
-                await fetch(`http://localhost:8080/beneficiario/${b.cpf}`, {
+                await fetch(`https://sprint-04-ddd.onrender.com/beneficiario/${b.cpf}`, {
                   method: 'DELETE'
                 })
                 setBeneficiarios(beneficiarios.filter(ben => ben.cpf !== b.cpf))
@@ -269,22 +262,6 @@ export default function Dashboard() {
               <p className="text-sm text-gray-500">Descrição: {c.descricao}</p>
               <p className="text-sm text-gray-500">Local: {c.local}</p>
               <p className="text-xs text-gray-400 mt-1">Código: {c.codigo}</p>
-            </div>
-          ))}
-        </div>
-      )}
-
-      {abaAtiva === 'eventos' && (
-        <div className="space-y-4">
-          {eventos.map((e) => (
-            <div key={e.titulo} className="bg-white rounded-2xl shadow-sm p-6 flex flex-col md:flex-row md:items-center md:justify-between gap-2">
-              <div>
-                <h3 className="text-lg font-bold text-gray-800">{e.titulo}</h3>
-                <p className="text-sm text-gray-500">Local: {e.local}</p>
-              </div>
-              <span className="bg-beige text-brown font-semibold text-sm px-4 py-1 rounded-full border border-brown/20">
-                {e.data}
-              </span>
             </div>
           ))}
         </div>
