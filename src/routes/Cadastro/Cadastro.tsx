@@ -7,6 +7,7 @@ interface CadastroFormData {
   cpf: string
   cro: string
   especializacao: string
+  senha: string
 }
 
 export default function Cadastro() {
@@ -18,7 +19,7 @@ export default function Cadastro() {
 
   async function onSubmit(data: CadastroFormData) {
     try {
-      const res = await fetch('http://localhost:8080/profissional', {
+      const res = await fetch('https://sprint-04-ddd.onrender.com/profissional/cadastrar', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(data)
@@ -94,6 +95,16 @@ export default function Cadastro() {
               {...register('especializacao', { required: 'Especialização é obrigatória' })}
             />
             {errors.especializacao && <p className="text-red-500 text-sm mt-1">{errors.especializacao.message}</p>}
+          </div>
+
+          <div>
+            <input
+              type="password"
+              placeholder="Senha"
+              className="w-full border border-gray-300 rounded-xl px-4 py-3 outline-none focus:border-secondary"
+              {...register('senha', { required: 'Senha é obrigatória' })}
+            />
+            {errors.senha && <p className="text-red-500 text-sm mt-1">{errors.senha.message}</p>}
           </div>
 
           <button
